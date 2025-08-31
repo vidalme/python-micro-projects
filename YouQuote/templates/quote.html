@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .quote-container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #4a5568;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        
+        .quote-text {
+            font-size: 1.4em;
+            line-height: 1.6;
+            color: #2d3748;
+            margin-bottom: 30px;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote-text::before {
+            content: '"';
+            font-size: 4em;
+            color: #667eea;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+        
+        .quote-text::after {
+            content: '"';
+            font-size: 4em;
+            color: #667eea;
+            position: absolute;
+            bottom: -40px;
+            right: -20px;
+        }
+        
+        .quote-author {
+            font-size: 1.2em;
+            color: #4a5568;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .quote-author::before {
+            content: '— ';
+        }
+        
+        .refresh-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: transform 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .error {
+            color: #e53e3e;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <h1>Quote of the Day</h1>
+        
+        {% if quote %}
+            <div class="quote-text">
+                {{ quote.content }}
+            </div>
+            <div class="quote-author">
+                {{ quote.author }}
+            </div>
+        {% else %}
+            <div class="error">
+                Sorry, we couldn't fetch a quote right now. Please try again later.
+            </div>
+        {% endif %}
+        
+        <button class="refresh-btn" onclick="location.reload()">
+            Get New Quote
+        </button>
+    </div>
+</body>
+</html>
