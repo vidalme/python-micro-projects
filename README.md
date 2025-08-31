@@ -1,25 +1,23 @@
-<h1>1º Projeto Prático - DevOps</h1>
-#Autor: Andre Vidal Almeida<br>
+# Python Micro Projects
+This repository is a personal collection of small Python projects, scripts, and study exercises. It serves as a playground for learning, experimenting, and practicing Python programming concepts, ranging from automation scripts to web apps and data processing tools.
 
-<p style='font-size:1.8rem;color:gold'>Deadline -> 26/04 às 23:59 horas
-<p><a href="projetos.md">Rápida descrição dos projetos criados</a>
- <p><a href="https://docs.google.com/document/d/1TKWtE9-2tH8v9-H_ahCH04DlHizMDq3Cc-8ZGo77YCo/edit">Guidelines oficiais do projeto prático</a>
-<p><a href='https://forms.gle/ZJopyXdvf4d1uF9h7'>Formulário de entrega</a>
+## Structure
 
-<h2>Automação de Rotinas em Ambiente Linux</h2>
+- **baclog/**: Task and backlog management scripts.
+- **organizador_de_pastas/**: Folder organization utilities.
+- **paratodos/**: File transfer and server list tools.
+- **pseport/**: Process simulation scripts.
+- **taskanador/**: Task management and logging utilities.
+- **trem/**: Data processing and collaborator management.
+- **YouQuote/**: Simple web app for generating and displaying quotes.
 
-<h3>Desafio</h3>    
+Each subfolder contains a self-contained project or script, often with its own README and requirements file.
 
-<p>Crie um conjunto de scripts Python que automatizam tarefas comuns em um ambiente Linux. Isso pode incluir a automatização de backups, gerenciamento de permissões de arquivos, monitoramento de recursos do sistema e outras tarefas relevantes para administração de sistemas.
-<h3>Etapas</h3>
-<ol  type="a">
-    <li>Identificação de Tarefas: Liste as tarefas que podem ser automatizadas no ambiente Linux</li>
-    <li>Desenvolvimento de Scripts: Escreva scripts Python para automatizar cada tarefa, utilizando bibliotecas relevantes. ( <a href='profetos.md'>Projetos escolhidos</a> )</li>
-    <li>Integração com Cron Jobs: Agende a execução periódica dos scripts usando tarefas cron para automação contínua. (Você pode obter informações sobre como fazer isso neste artigo).</li>
-</ol>
+## Purpose
 
-<h3>Orientações gerais</h3>
-<p>Caso tenha alguma dúvida, compartilhe conosco no Discord e/ou peça apoio da sua pessoa mentora para te direcionar.
+This repository is intended for:
+- Practicing Python programming and exploring new libraries.
+- Building small utilities for personal use.
+- Documenting learning progress and experiments.
 
-<h3>Orientações para a entrega</h3>
-<p>Caso queira, você poderá entregar o projeto através deste link até o dia 26/04 às 23:59 horas.
+Feel free to explore, use, or adapt any of the projects for your own learning!
